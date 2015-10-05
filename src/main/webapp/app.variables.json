@@ -33,6 +33,7 @@
 		"_id": "wm-supportedLocale-wm.Variable1402640443182"
 	},
 	"GoogleapisInvoke": {
+		"name": "GoogleapisInvoke",
 		"type": "googleapis.DirectionsResponse",
 		"isList": false,
 		"owner": "App",
@@ -98,8 +99,7 @@
 				}
 			]
 		},
-		"_id": "wm-GoogleapisInvoke-wm.ServiceVariable-1444042875668",
-		"name": "GoogleapisInvoke"
+		"_id": "wm-GoogleapisInvoke-wm.ServiceVariable-1444042875668"
 	},
 	"goToPage_Page": {
 		"owner": "App",
@@ -108,5 +108,13 @@
 		"dataBinding": {},
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Page-wm.NavigationVariable-1444042958158"
+	},
+	"goToPage_Page1": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Page1",
+		"dataBinding": {},
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Page1-wm.NavigationVariable-1444044054434"
 	}
 }
