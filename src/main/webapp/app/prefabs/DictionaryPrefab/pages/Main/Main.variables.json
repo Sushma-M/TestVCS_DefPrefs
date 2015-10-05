@@ -1,0 +1,113 @@
+{
+	"supportedLocale": {
+		"name": "supportedLocale",
+		"type": "string",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"en": "English"
+		},
+		"dataBinding": [
+			{
+				"name": "dataSet",
+				"type": "object",
+				"fields": [
+					{
+						"name": "dataValue",
+						"type": "string"
+					}
+				]
+			}
+		],
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-supportedLocale-wm.Variable1402640443182"
+	},
+	"DictionaryInvoke": {
+		"name": "DictionaryInvoke",
+		"type": "dictionary.RootResponse",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"name": "dataBinding",
+				"type": "object",
+				"fields": [
+					{
+						"name": "word",
+						"value": "bind:Widgets.text1.datavalue",
+						"type": "java.lang.String"
+					},
+					{
+						"name": "X-Mashape-Key",
+						"value": "qpGrvutguBmshJ7YXhvFlmCm54S5p1PjhOijsnT4to0WySGuCH",
+						"type": "java.lang.String"
+					}
+				]
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"service": "dictionary",
+		"operation": "invoke",
+		"operationType": "get",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"onSuccess": "notificationVariable1",
+		"onError": "notificationVariable2",
+		"serviceType": "RestService",
+		"category": "wm.ServiceVariable",
+		"isDefault": true,
+		"wmServiceOperationInfo": {
+			"methodType": "get",
+			"name": "invoke",
+			"relativePath": "/dictionary/invoke/",
+			"consumes": [
+				"text/xml"
+			],
+			"parameters": [
+				{
+					"name": "X-Mashape-Key",
+					"parameterType": "header"
+				},
+				{
+					"name": "word",
+					"parameterType": "query"
+				}
+			]
+		},
+		"_id": "wm-DictionaryInvoke-wm.ServiceVariable-1440230923961"
+	},
+	"notificationVariable1": {
+		"owner": "Page",
+		"operation": "toast",
+		"dataBinding": {
+			"text": "Success",
+			"duration": "1000",
+			"class": "Success",
+			"toasterPosition": "bottom right"
+		},
+		"category": "wm.NotificationVariable",
+		"_id": "wm-notificationVariable1-wm.NotificationVariable-1440233009521",
+		"name": "notificationVariable1"
+	},
+	"notificationVariable2": {
+		"owner": "Page",
+		"operation": "toast",
+		"dataBinding": {
+			"text": "Error",
+			"duration": "1000",
+			"class": "Error",
+			"toasterPosition": "bottom right"
+		},
+		"category": "wm.NotificationVariable",
+		"_id": "wm-notificationVariable2-wm.NotificationVariable-1440233040741"
+	}
+}

@@ -1,0 +1,15 @@
+<wm-page data-ng-controller="DictionaryPrefabController" name="page1">
+    <wm-view class="container" backgroundcolor="#fff" name="view1">
+        <wm-composite name="composite1">
+            <wm-label class="col-md-3" name="label1" caption="Enter Word"></wm-label>
+            <wm-container class="col-md-9" name="container1">
+                <wm-text name="text1" placeholder="Enter word"></wm-text>
+            </wm-container>
+        </wm-composite>
+        <wm-button class="btn-default" caption="search meaning" type="button" name="button1" on-click="DictionaryInvoke"></wm-button>
+        <wm-grid readonlygrid="true" name="grid1" dataset="bind:Variables.DictionaryInvoke.dataSet.definitions">
+            <wm-grid-column binding="text" caption="Text" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+            <wm-grid-column binding="attribution" caption="Attribution" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+        </wm-grid>
+    </wm-view>
+</wm-page>

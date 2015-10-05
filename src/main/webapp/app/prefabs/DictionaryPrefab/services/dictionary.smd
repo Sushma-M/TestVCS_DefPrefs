@@ -1,0 +1,16 @@
+{
+	"methods": [{
+		"operationType": null,
+		"name": "invoke",
+		"parameters": [{
+			"name": "X-Mashape-Key",
+			"type": "java.lang.String"
+		}, {
+			"name": "word",
+			"type": "java.lang.String"
+		}],
+		"returnType": "dictionary.RootResponse"
+	}],
+	"serviceURL": "dictionary.json",
+	"serviceType": "JSON-RPC"
+}

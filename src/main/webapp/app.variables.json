@@ -116,5 +116,13 @@
 		"dataBinding": {},
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Page1-wm.NavigationVariable-1444044054434"
+	},
+	"goToPage_Page2": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "Page2",
+		"dataBinding": {},
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_Page2-wm.NavigationVariable-1444044314365"
 	}
 }
